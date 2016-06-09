@@ -1,16 +1,9 @@
-# Docker iodine server
+# Docker iodine server customized for QNAP TVS-463 NAS device
 
-Build and run:
-
-```
-docker build -t iodine .
-docker run --rm -ti --privileged -p 53:53/udp -e IODINE_HOST=<tunneldomain> -e IODINE_PASSWORD=<pass> iodine
-```
-
-
-Run from docker hub:
+Configurable environment parameters:
 
 ```
-docker run -d --restart=always --privileged -p 53:53/udp -e IODINE_HOST=<tunneldomain> -e IODINE_PASSWORD=<pass> -e
-EXTERNAL_IP=<externalserverip> --name iodine asmaps/iodine
+EXTERNAL_IP	= a.b.c.d
+IODINE_HOST = tunnel.domain.tld
+IODINE_PASSWORD	 = xxx
 ```
