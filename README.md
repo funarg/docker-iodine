@@ -6,4 +6,5 @@ Configurable environment parameters:
 EXTERNAL_IP	= a.b.c.d
 IODINE_HOST = tunnel.domain.tld
 IODINE_PASSWORD	 = xxx
+PORT = 53
 ```

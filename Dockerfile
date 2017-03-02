@@ -8,5 +8,6 @@ ADD start.sh /opt/iodine/start.sh
 WORKDIR /opt/iodine
 
 EXPOSE 53/udp
+EXPOSE 5053/udp
 
 CMD ["./start.sh"]
